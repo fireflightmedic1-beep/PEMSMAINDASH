@@ -7,14 +7,13 @@ st.set_page_config(page_title="PEMS ED DASHBOARD", layout="wide", page_icon="üè
 
 # Custom CSS for Piedmont Branding
 st.markdown("""
-    <style>
-    .stApp { background-color: #f0f2f5; }
-    [data-testid="stHeader"] { background-color: #005eb8; }
-    h1, h2, h3 { color: #005eb8; font-weight: bold; }
-    .protocol-card { background: white; padding: 20px; border-radius: 10px; border-left: 5px solid #005eb8; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); }
-    </style>
-    """, unsafe_with_html=True)
-
+<style>
+.stApp { background-color: #f0f2f5; }
+[data-testid="stHeader"] { background-color: #005eb8; }
+h1, h2, h3 { color: #005eb8; font-weight: bold; }
+.protocol-card { background: white; padding: 20px; border-radius: 10px; border-left: 5px solid #005eb8; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); }
+</style>
+""", unsafe_allow_html=True)
 # --- HEADER ---
 st.title("üè• PEMS ED MAIN FLOW")
 st.write(f"**Last Sync:** {datetime.now().strftime('%m/%d/%Y %H:%M')}")
